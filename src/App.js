@@ -20,6 +20,7 @@ function App() {
 
 	return (
 		<div>
+			<h1>Deno is installed!</h1>
 			<p>The server says {serverAnswer}</p>
 			<button onClick={() => askServer("/")}>/</button>
 			<button onClick={() => askServer("/home")}>/home</button>
