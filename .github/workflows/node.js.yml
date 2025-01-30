@@ -24,7 +24,7 @@ jobs:
     - run: npm i
 
   deploy:
+   runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - runs-on: ubuntu-latest
     - cmd: npm run start
