@@ -22,7 +22,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
+
   deploy:
     steps:
+    - uses: actions/checkout@v4
     - runs-on: ubuntu-latest
     - cmd: npm run start
