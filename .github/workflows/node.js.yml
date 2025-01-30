@@ -8,11 +8,11 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
-        node-version: 22.x
+      matrix:
+        node-version: [22.x]
 
     steps:
     - uses: actions/checkout@v4
@@ -27,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - cmd: npm run start
+    - run: npm run start
