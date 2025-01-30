@@ -11,7 +11,10 @@ function App() {
 
 	const askServer = (parameter) => {
 		sendQuery(parameter).then((result) => {
-			setServerAnswer(result);
+			const text = result.text();
+			text.then((plainText) => {
+				setServerAnswer(plainText);
+			})
 		})
 	}
 
