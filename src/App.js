@@ -26,6 +26,7 @@ function App() {
 			<button onClick={() => askServer("/home")}>/home</button>
 			<button onClick={() => askServer("/test")}>/test</button>
 			<button onClick={() => askServer("/user")}>/user</button>
+			<button onClick={() => askServer("/render")}>/render</button>
 		</div>
 	);
 }
