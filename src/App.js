@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 async function sendQuery(contents) {
-	return fetch(`https://foreign-lena-eduardo-rueda-de-santiago-a06d94fa.koyeb.app${contents}`);
+	return fetch(`https://backend-6f84.onrender.com${contents}`);
 }
 
 function App() {
